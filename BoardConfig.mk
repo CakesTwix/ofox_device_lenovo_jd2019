@@ -99,6 +99,40 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
+##############
+# SHRP flags #
+##############
+
+# Device codename
+SHRP_DEVICE_CODE := jd2019
+# Path SHRP device tree
+SHRP_PATH := device/lenovo/$(SHRP_DEVICE_CODE)
+# Maintainer name
+SHRP_MAINTAINER := CakesTwix
+# Recovery Type (for "About" section only)
+SHRP_REC_TYPE := Treble
+# Device Type (for "About" section only)
+SHRP_DEVICE_TYPE := A/B
+# Device's recovery path
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+# Emergency DownLoad mode (0 = no EDL mode, 1 = EDL mode available)
+SHRP_EDL_MODE := 1
+# External sdcard
+SHRP_EXTERNAL := /sdcard1
+# USB OTG path
+SHRP_OTG := /usb_otg
+# Flashlight
+SHRP_FLASH := 1
+# For notch devices
+SHRP_NOTCH := true
+# SHRP Dark mode
+SHRP_DARK := true
+# Custom led paths for flashlight
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/class/leds/led:torch_0/brightness
+SHRP_FONP_2 := /sys/class/leds/led:torch_1/brightness
+SHRP_FONP_3 := /sys/class/leds/led:torch_2/brightness
+
 # TWRP specific build flags
 TARGET_OTA_ASSERT_DEVICE := jd2019
 RECOVERY_SDCARD_ON_DATA := true
