@@ -129,11 +129,6 @@ SHRP_FLASH := 1
 SHRP_NOTCH := true
 # SHRP Dark mode
 SHRP_DARK := true
-# Custom led paths for flashlight
-SHRP_CUSTOM_FLASHLIGHT := true
-SHRP_FONP_1 := /sys/class/leds/led:torch_0/brightness
-SHRP_FONP_2 := /sys/class/leds/led:torch_1/brightness
-SHRP_FONP_3 := /sys/class/leds/led:torch_2/brightness
 
 # TWRP specific build flags
 TARGET_OTA_ASSERT_DEVICE := jd2019
