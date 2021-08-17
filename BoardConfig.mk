@@ -129,6 +129,8 @@ SHRP_FLASH := 1
 SHRP_NOTCH := true
 # SHRP Dark mode
 SHRP_DARK := true
+# SHRP Express, enables on-the-fly theme patching
+SHRP_EXPRESS := true
 
 # TWRP specific build flags
 TARGET_OTA_ASSERT_DEVICE := jd2019
